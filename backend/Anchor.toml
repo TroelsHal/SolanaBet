@@ -4,11 +4,14 @@
 resolution = true
 skip-lint = false
 
+[programs.testnet]
+betting = "5Dhw6eY4xHrScWFyA35w7GLD5vP9YHKfod44feGz5hmP"
+
 [programs.devnet]
-betting = "6HbAz3WNYGDe2B5wC3WNfYjLZFVHMdw1t3RpiRPAJFRx"
+betting = "5Dhw6eY4xHrScWFyA35w7GLD5vP9YHKfod44feGz5hmP"
 
 [programs.localnet]
-betting = "6HbAz3WNYGDe2B5wC3WNfYjLZFVHMdw1t3RpiRPAJFRx"
+betting = "5Dhw6eY4xHrScWFyA35w7GLD5vP9YHKfod44feGz5hmP"
 
 [registry]
 url = "https://api.apr.dev"
