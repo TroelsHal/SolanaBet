@@ -32,3 +32,4 @@ This program (still) only uses free testnet tokens.
 - [ ] Experiment with other RPC nodes
 - [ ] Validate program on Solana Explorer
 - [ ] Add security.txt
+- [ ] Show amounts in both lamports and SOL
