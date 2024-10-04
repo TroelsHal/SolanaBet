@@ -14,7 +14,7 @@ betting = "6HbAz3WNYGDe2B5wC3WNfYjLZFVHMdw1t3RpiRPAJFRx"
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "http://127.0.0.1:8899"
+cluster = "https://api.testnet.solana.com"
 wallet = "~/.config/solana/id.json"
 
 [scripts]
