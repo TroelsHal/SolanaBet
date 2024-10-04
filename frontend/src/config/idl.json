@@ -1,0 +1,481 @@
+{
+  "address": "6HbAz3WNYGDe2B5wC3WNfYjLZFVHMdw1t3RpiRPAJFRx",
+  "metadata": {
+    "name": "betting",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Created with Anchor"
+  },
+  "instructions": [
+    {
+      "name": "claim_winnings",
+      "discriminator": [161, 215, 24, 59, 14, 236, 242, 221],
+      "accounts": [
+        {
+          "name": "bet_account",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "user"
+              },
+              {
+                "kind": "account",
+                "path": "game_account"
+              },
+              {
+                "kind": "arg",
+                "path": "prediction"
+              }
+            ]
+          }
+        },
+        {
+          "name": "game_account",
+          "writable": true
+        },
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "prediction",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "close_bet_account",
+      "discriminator": [46, 209, 107, 217, 227, 100, 211, 211],
+      "accounts": [
+        {
+          "name": "bet_account",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "user"
+              },
+              {
+                "kind": "account",
+                "path": "game_account"
+              },
+              {
+                "kind": "arg",
+                "path": "prediction"
+              }
+            ]
+          }
+        },
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "game_account"
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "_prediction",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "close_game",
+      "discriminator": [237, 236, 157, 201, 253, 20, 248, 67],
+      "accounts": [
+        {
+          "name": "game_account",
+          "writable": true
+        },
+        {
+          "name": "program_settings"
+        },
+        {
+          "name": "manager",
+          "writable": true,
+          "signer": true,
+          "relations": ["program_settings"]
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "declare_result",
+      "discriminator": [205, 129, 155, 217, 131, 167, 175, 38],
+      "accounts": [
+        {
+          "name": "program_settings",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [115, 101, 116, 116, 105, 110, 103, 115]
+              }
+            ]
+          }
+        },
+        {
+          "name": "game_account",
+          "writable": true
+        },
+        {
+          "name": "manager",
+          "signer": true,
+          "relations": ["program_settings"]
+        }
+      ],
+      "args": [
+        {
+          "name": "result",
+          "type": "u8"
+        }
+      ]
+    },
+    {
+      "name": "initialize_game",
+      "discriminator": [44, 62, 102, 247, 126, 208, 130, 215],
+      "accounts": [
+        {
+          "name": "game_account",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "program_settings",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [115, 101, 116, 116, 105, 110, 103, 115]
+              }
+            ]
+          }
+        },
+        {
+          "name": "manager",
+          "writable": true,
+          "signer": true,
+          "relations": ["program_settings"]
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "home",
+          "type": "string"
+        },
+        {
+          "name": "away",
+          "type": "string"
+        },
+        {
+          "name": "tournament",
+          "type": "string"
+        },
+        {
+          "name": "start_time",
+          "type": "i64"
+        }
+      ]
+    },
+    {
+      "name": "initialize_program",
+      "discriminator": [176, 107, 205, 168, 24, 157, 175, 103],
+      "accounts": [
+        {
+          "name": "program_settings",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [115, 101, 116, 116, 105, 110, 103, 115]
+              }
+            ]
+          }
+        },
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "manager",
+          "type": "pubkey"
+        }
+      ]
+    },
+    {
+      "name": "make_bet",
+      "discriminator": [133, 244, 84, 216, 179, 96, 110, 149],
+      "accounts": [
+        {
+          "name": "bet_account",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "account",
+                "path": "user"
+              },
+              {
+                "kind": "account",
+                "path": "game_account"
+              },
+              {
+                "kind": "arg",
+                "path": "prediction"
+              }
+            ]
+          }
+        },
+        {
+          "name": "user",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "game_account",
+          "writable": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "prediction",
+          "type": "u8"
+        },
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ]
+    },
+    {
+      "name": "transfer_manager",
+      "discriminator": [183, 122, 218, 241, 4, 151, 156, 120],
+      "accounts": [
+        {
+          "name": "program_settings",
+          "writable": true
+        },
+        {
+          "name": "manager",
+          "signer": true,
+          "relations": ["program_settings"]
+        }
+      ],
+      "args": [
+        {
+          "name": "new_manager",
+          "type": "pubkey"
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Bet",
+      "discriminator": [147, 23, 35, 59, 15, 75, 155, 32]
+    },
+    {
+      "name": "Game",
+      "discriminator": [27, 90, 166, 125, 74, 100, 121, 18]
+    },
+    {
+      "name": "ProgramSettings",
+      "discriminator": [37, 198, 237, 228, 196, 117, 226, 9]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "InsufficientFunds",
+      "msg": "Insufficient funds"
+    },
+    {
+      "code": 6001,
+      "name": "InvalidPrediction",
+      "msg": "Invalid prediction value"
+    },
+    {
+      "code": 6002,
+      "name": "BettingPeriodEnded",
+      "msg": "Betting period ended"
+    },
+    {
+      "code": 6003,
+      "name": "ResultNotDeclared",
+      "msg": "Result not declared"
+    },
+    {
+      "code": 6004,
+      "name": "InvalidTime",
+      "msg": "Invalid time"
+    },
+    {
+      "code": 6005,
+      "name": "UnauthorizedManager",
+      "msg": "Unauthorized manager"
+    },
+    {
+      "code": 6006,
+      "name": "InvalidResult",
+      "msg": "Invalid result"
+    },
+    {
+      "code": 6007,
+      "name": "CalculationError",
+      "msg": "Calculation error"
+    },
+    {
+      "code": 6008,
+      "name": "ExceedsMaximumAllowedAmount",
+      "msg": "Exceeds maximum allowed amount"
+    },
+    {
+      "code": 6009,
+      "name": "BetIsZero",
+      "msg": "Bet must be positive number"
+    },
+    {
+      "code": 6010,
+      "name": "ResultAlreadyDeclared",
+      "msg": "Result already declared"
+    },
+    {
+      "code": 6011,
+      "name": "BettingPeriodStillOpen",
+      "msg": "Betting period still open"
+    },
+    {
+      "code": 6012,
+      "name": "GameNotExpired",
+      "msg": "Game not expired"
+    },
+    {
+      "code": 6013,
+      "name": "GameNotClosed",
+      "msg": "Game not closed"
+    }
+  ],
+  "types": [
+    {
+      "name": "Bet",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "amount",
+            "type": "u64"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          },
+          {
+            "name": "user",
+            "type": "pubkey"
+          },
+          {
+            "name": "game",
+            "type": "pubkey"
+          },
+          {
+            "name": "prediction",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Game",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "home_team",
+            "type": "string"
+          },
+          {
+            "name": "away_team",
+            "type": "string"
+          },
+          {
+            "name": "tournament",
+            "type": "string"
+          },
+          {
+            "name": "total_amount_draw",
+            "type": "u64"
+          },
+          {
+            "name": "total_amount_home",
+            "type": "u64"
+          },
+          {
+            "name": "total_amount_away",
+            "type": "u64"
+          },
+          {
+            "name": "result",
+            "type": "u8"
+          },
+          {
+            "name": "start_time",
+            "type": "i64"
+          },
+          {
+            "name": "result_declared_time",
+            "type": "i64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ProgramSettings",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "manager",
+            "type": "pubkey"
+          }
+        ]
+      }
+    }
+  ]
+}

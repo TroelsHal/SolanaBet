@@ -1,0 +1,11 @@
+Check explorer link
+
+Make clean github repos
+
+***
+
+show button when not connected
+
+amount in lamports or SOL?
+
+experiment with different rpc nodes

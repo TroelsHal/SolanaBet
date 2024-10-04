@@ -1,0 +1,23 @@
+.home-container {
+  padding: 20px;
+}
+
+.coin-icon {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 5px;
+}
+
+.half-coin {
+  width: 14px;
+}
+
+.text-container a {
+  color: black;
+  text-decoration: underline;
+}
+
+.text-container a:hover {
+  color: #737373;
+  text-decoration: underline;
+}

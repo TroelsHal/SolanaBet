@@ -1,0 +1,14 @@
+.game-card-body {
+  display: flex;
+  align-items: flex-start;
+  max-width: fit-content;
+}
+
+.game-left-section {
+  padding-right: 20px;
+  min-width: 500px;
+}
+
+.game-right-section {
+  min-width: 300px;
+}

@@ -1,0 +1,8 @@
+.solana-explorer-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.solana-explorer-link:hover {
+  text-decoration: underline;
+}

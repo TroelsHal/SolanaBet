@@ -1,0 +1,14 @@
+.bet-details {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+}
+
+.bet-details-prediction {
+  min-width: 260px;
+  margin-bottom: 0;
+}
+
+.bet-details-amount {
+  flex-grow: 1;
+}

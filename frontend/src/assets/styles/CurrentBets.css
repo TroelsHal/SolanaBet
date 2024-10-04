@@ -1,0 +1,26 @@
+.current-bets-container {
+    max-width: 600px; /* Matches the table width */
+  }
+  
+  .current-bets-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .current-bets-table {
+    max-width: 600px;
+  }
+  
+  .current-bets-table th.team-name {
+    width: 45%;
+  }
+  
+  .current-bets-table th.percentage {
+    width: 10%;
+  }
+  
+  .current-bets-table th.lamports {
+    width: 45%;
+  }
+  

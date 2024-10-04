@@ -1,0 +1,58 @@
+# Node.js dependencies
+node_modules/
+
+# Yarn specific files
+.yarn/
+.yarnrc.yml
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Production build
+/build/
+
+# Testing output
+/coverage/
+
+# Miscellaneous
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.log
+*.tmp
+*.swp
+*.lock
+*.bak
+*.old
+*.log
+*.sw?
+
+# IDE and editor specific files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Backend (Anchor/Rust) specific files
+**/*.rs.bk
+**/*.rs.bk.*
+.anchor/
+target/
+test-ledger/
+.ledger/
+
+# Ignore deploy files in backend
+deploy/*
+
+# Solana CLI files
+.ledger/
+
+# Temporary Rust files
+**/*.log
+
+# Specific to testing with test-ledger
+test-ledger

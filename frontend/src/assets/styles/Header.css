@@ -1,0 +1,28 @@
+.header {
+  background-color: #495057;
+  margin-top: 10px;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: white !important;
+  margin-right: 20px;
+}
+
+.navbar .nav-link:hover {
+  color: #dddddd !important;
+}
+
+.navbar .nav-item .me-3 {
+  margin-right: 20px;
+}
+
+.d-flex .wallet-adapter-button {
+  color: white;
+  border-color: white;
+}
+
+.d-flex .wallet-adapter-button:hover {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}

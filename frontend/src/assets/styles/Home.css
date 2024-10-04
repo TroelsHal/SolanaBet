@@ -1,0 +1,9 @@
+.text-container a {
+  color: black;
+  text-decoration: underline;
+}
+
+.text-container a:hover {
+  color: #737373;
+  text-decoration: underline;
+}

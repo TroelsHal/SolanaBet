@@ -1,0 +1,1 @@
+export const EXPIRATION_TIME_MILLISECONDS = 60 * 1000;

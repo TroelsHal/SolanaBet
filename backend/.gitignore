@@ -1,0 +1,43 @@
+.DS_Store
+**/*.rs.bk
+node_modules
+test-ledger
+.yarn
+deploy/*
+
+# Anchor project files
+.anchor
+target
+test-ledger
+
+# Rust files
+**/*.rs.bk
+**/*.rs.bk.*
+**/*.log
+
+# Node.js dependencies
+node_modules
+
+# Yarn specific files
+.yarn
+.yarnrc.yml
+
+# Solana CLI files
+.ledger
+
+# Miscellaneous
+*.log
+*.tmp
+*.swp
+*.lock
+*.bak
+*.old
+
+# IDE and editor specific files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
