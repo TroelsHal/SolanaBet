@@ -9,7 +9,16 @@
   "instructions": [
     {
       "name": "claim_winnings",
-      "discriminator": [161, 215, 24, 59, 14, 236, 242, 221],
+      "discriminator": [
+        161,
+        215,
+        24,
+        59,
+        14,
+        236,
+        242,
+        221
+      ],
       "accounts": [
         {
           "name": "bet_account",
@@ -54,7 +63,16 @@
     },
     {
       "name": "close_bet_account",
-      "discriminator": [46, 209, 107, 217, 227, 100, 211, 211],
+      "discriminator": [
+        46,
+        209,
+        107,
+        217,
+        227,
+        100,
+        211,
+        211
+      ],
       "accounts": [
         {
           "name": "bet_account",
@@ -98,7 +116,16 @@
     },
     {
       "name": "close_game",
-      "discriminator": [237, 236, 157, 201, 253, 20, 248, 67],
+      "discriminator": [
+        237,
+        236,
+        157,
+        201,
+        253,
+        20,
+        248,
+        67
+      ],
       "accounts": [
         {
           "name": "game_account",
@@ -111,7 +138,9 @@
           "name": "manager",
           "writable": true,
           "signer": true,
-          "relations": ["program_settings"]
+          "relations": [
+            "program_settings"
+          ]
         },
         {
           "name": "system_program",
@@ -122,7 +151,16 @@
     },
     {
       "name": "declare_result",
-      "discriminator": [205, 129, 155, 217, 131, 167, 175, 38],
+      "discriminator": [
+        205,
+        129,
+        155,
+        217,
+        131,
+        167,
+        175,
+        38
+      ],
       "accounts": [
         {
           "name": "program_settings",
@@ -130,7 +168,16 @@
             "seeds": [
               {
                 "kind": "const",
-                "value": [115, 101, 116, 116, 105, 110, 103, 115]
+                "value": [
+                  115,
+                  101,
+                  116,
+                  116,
+                  105,
+                  110,
+                  103,
+                  115
+                ]
               }
             ]
           }
@@ -142,7 +189,9 @@
         {
           "name": "manager",
           "signer": true,
-          "relations": ["program_settings"]
+          "relations": [
+            "program_settings"
+          ]
         }
       ],
       "args": [
@@ -154,7 +203,16 @@
     },
     {
       "name": "initialize_game",
-      "discriminator": [44, 62, 102, 247, 126, 208, 130, 215],
+      "discriminator": [
+        44,
+        62,
+        102,
+        247,
+        126,
+        208,
+        130,
+        215
+      ],
       "accounts": [
         {
           "name": "game_account",
@@ -167,7 +225,16 @@
             "seeds": [
               {
                 "kind": "const",
-                "value": [115, 101, 116, 116, 105, 110, 103, 115]
+                "value": [
+                  115,
+                  101,
+                  116,
+                  116,
+                  105,
+                  110,
+                  103,
+                  115
+                ]
               }
             ]
           }
@@ -176,7 +243,9 @@
           "name": "manager",
           "writable": true,
           "signer": true,
-          "relations": ["program_settings"]
+          "relations": [
+            "program_settings"
+          ]
         },
         {
           "name": "system_program",
@@ -204,7 +273,16 @@
     },
     {
       "name": "initialize_program",
-      "discriminator": [176, 107, 205, 168, 24, 157, 175, 103],
+      "discriminator": [
+        176,
+        107,
+        205,
+        168,
+        24,
+        157,
+        175,
+        103
+      ],
       "accounts": [
         {
           "name": "program_settings",
@@ -213,7 +291,16 @@
             "seeds": [
               {
                 "kind": "const",
-                "value": [115, 101, 116, 116, 105, 110, 103, 115]
+                "value": [
+                  115,
+                  101,
+                  116,
+                  116,
+                  105,
+                  110,
+                  103,
+                  115
+                ]
               }
             ]
           }
@@ -237,7 +324,16 @@
     },
     {
       "name": "make_bet",
-      "discriminator": [133, 244, 84, 216, 179, 96, 110, 149],
+      "discriminator": [
+        133,
+        244,
+        84,
+        216,
+        179,
+        96,
+        110,
+        149
+      ],
       "accounts": [
         {
           "name": "bet_account",
@@ -286,7 +382,16 @@
     },
     {
       "name": "transfer_manager",
-      "discriminator": [183, 122, 218, 241, 4, 151, 156, 120],
+      "discriminator": [
+        183,
+        122,
+        218,
+        241,
+        4,
+        151,
+        156,
+        120
+      ],
       "accounts": [
         {
           "name": "program_settings",
@@ -295,7 +400,9 @@
         {
           "name": "manager",
           "signer": true,
-          "relations": ["program_settings"]
+          "relations": [
+            "program_settings"
+          ]
         }
       ],
       "args": [
@@ -309,15 +416,42 @@
   "accounts": [
     {
       "name": "Bet",
-      "discriminator": [147, 23, 35, 59, 15, 75, 155, 32]
+      "discriminator": [
+        147,
+        23,
+        35,
+        59,
+        15,
+        75,
+        155,
+        32
+      ]
     },
     {
       "name": "Game",
-      "discriminator": [27, 90, 166, 125, 74, 100, 121, 18]
+      "discriminator": [
+        27,
+        90,
+        166,
+        125,
+        74,
+        100,
+        121,
+        18
+      ]
     },
     {
       "name": "ProgramSettings",
-      "discriminator": [37, 198, 237, 228, 196, 117, 226, 9]
+      "discriminator": [
+        37,
+        198,
+        237,
+        228,
+        196,
+        117,
+        226,
+        9
+      ]
     }
   ],
   "errors": [

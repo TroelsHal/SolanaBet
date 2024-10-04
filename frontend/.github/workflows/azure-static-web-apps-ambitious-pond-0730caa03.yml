@@ -4,10 +4,14 @@ on:
   push:
     branches:
       - master
+    paths:
+      - "frontend/**" # Only trigger when changes are made to files in the frontend directory
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
       - master
+    paths:
+      - "frontend/**" # Only trigger for PRs that modify files in the frontend directory
 
 jobs:
   build_and_deploy_job:
@@ -15,23 +19,24 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE20: true  # Enforce Node.js 20
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE20: true # Enforce Node.js 20
 
     steps:
       - uses: actions/checkout@v4
         with:
           submodules: true
           lfs: false
-          fetch-depth: 0  # Fetch all history for accurate builds
-          persist-credentials: false  # Avoid using extraheader
+          fetch-depth: 0 # Fetch all history for accurate builds
+          persist-credentials: false # Avoid using extraheader
 
       # Set up Node.js 20
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install dependencies
+        working-directory: ./frontend # Set working directory to frontend
         run: npm install
 
       - name: Build And Deploy
@@ -42,8 +47,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
           action: "upload"
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "/" # App source code path
+          app_location: "/frontend" # App source code path - point to the frontend directory
           api_location: "" # Api source code path - optional
           output_location: "build" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
