@@ -20,7 +20,7 @@ const Questions: React.FC = () => {
       <p>
         The blockchain program is open source and available on{" "}
         <a
-          href={`https://github.com`}
+          href={`https://github.com/TroelsHal/SolanaBet`}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -28,7 +28,7 @@ const Questions: React.FC = () => {
         </a>{" "}
         and on{" "}
         <a
-          href={`https://explorer.solana.com/tx/${programAddress}?cluster=devnet`}
+          href={`https://explorer.solana.com/address/${programAddress}?cluster=devnet`}
           target="_blank"
           rel="noopener noreferrer"
         >
