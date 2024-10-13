@@ -5,7 +5,7 @@
  * IDL can be found at `target/idl/betting.json`.
  */
 export type Betting = {
-  address: "5vSrWYFQcnQA4Lu49WjwaSb8P9AD6ZN8KiLWPEunYnrD";
+  address: "63p9553Ch7gsrAZM1NKq2AYvjybBCZZdpSvynGzUdziC";
   metadata: {
     name: "betting";
     version: "0.1.0";

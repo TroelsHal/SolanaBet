@@ -36,8 +36,8 @@ const CreateGame: React.FC = () => {
       }
 
       const programManager = await solanaService?.getProgramManager();
-      if (!programManager) {
-        setError("Error connecting to Solana network");
+      if (programManager instanceof Error) {
+        setError("Error getting program manager from Solana network");
         setLoading(false);
         return;
       }

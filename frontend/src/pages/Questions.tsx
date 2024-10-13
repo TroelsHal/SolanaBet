@@ -18,7 +18,7 @@ const Questions: React.FC = () => {
         and distributes them to the correct bettors.
       </p>
       <p>
-        The blockchain program is open-source and available on{" "}
+        The blockchain program is open source and available on{" "}
         <a
           href={`https://github.com`}
           target="_blank"
