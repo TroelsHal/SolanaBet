@@ -5,12 +5,12 @@ const Home: React.FC = () => {
   window.Buffer = buffer.Buffer;
   return (
     <div className="text-container">
-      <h2>Bet on popular football games with Solana Testnet tokens.</h2>
+      <h2>Bet on popular football games with Solana Devnet tokens.</h2>
       <br />
       <br />
       <h5>
         SolanaBet does not use real money. Read more about{" "}
-        <a href="/questions">free Testnet tokens</a>.
+        <a href="/questions">free Devnet tokens</a>.
       </h5>
       <br />
       <h5>

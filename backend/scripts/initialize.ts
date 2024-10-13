@@ -38,4 +38,9 @@ async function main() {
   console.log("Program initialized with manager: ", managerFromProgram);
 }
 
-main().then(() => process.exit());
+main()
+  .then(() => process.exit())
+  .catch((err) => {
+    console.error("Error during initialization:", JSON.stringify(err, null, 2));
+    process.exit(1);
+  });

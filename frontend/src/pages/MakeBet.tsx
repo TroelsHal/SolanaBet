@@ -170,7 +170,7 @@ const MakeBet: React.FC = () => {
       {transactionId && (
         <div className="alert alert-secondary mt-3">
           <a
-            href={`https://explorer.solana.com/tx/${transactionId}?cluster=testnet`}
+            href={`https://explorer.solana.com/tx/${transactionId}?cluster=devnet`}
             target="_blank"
             rel="noopener noreferrer"
             className="solana-explorer-link"

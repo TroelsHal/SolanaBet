@@ -28,7 +28,7 @@ const Questions: React.FC = () => {
         </a>{" "}
         and on{" "}
         <a
-          href={`https://explorer.solana.com/tx/${programAddress}?cluster=testnet`}
+          href={`https://explorer.solana.com/tx/${programAddress}?cluster=devnet`}
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -41,13 +41,13 @@ const Questions: React.FC = () => {
       </p>
       <p>
         No, SolanaBet does not use real money. It is deployed on the Solana
-        Testnet and uses only Testnet Tokens.
+        Devnet and uses only Devnet Tokens.
       </p>
       <p>
         <strong>How do I get free tokens?</strong>
       </p>
       <p>
-        Get free Testnet tokens{" "}
+        Get free Devnet tokens{" "}
         <a
           href={`https://solfaucet.com/`}
           target="_blank"
@@ -57,7 +57,7 @@ const Questions: React.FC = () => {
         </a>{" "}
         and{" "}
         <a
-          href={`https://faucet.quicknode.com/solana/testnet/`}
+          href={`https://faucet.quicknode.com/solana/devnet/`}
           target="_blank"
           rel="noopener noreferrer"
         >

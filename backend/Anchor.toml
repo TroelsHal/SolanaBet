@@ -4,20 +4,20 @@
 resolution = true
 skip-lint = false
 
-[programs.testnet]
-betting = "5Dhw6eY4xHrScWFyA35w7GLD5vP9YHKfod44feGz5hmP"
-
 [programs.devnet]
-betting = "5Dhw6eY4xHrScWFyA35w7GLD5vP9YHKfod44feGz5hmP"
+betting = "63p9553Ch7gsrAZM1NKq2AYvjybBCZZdpSvynGzUdziC"
 
 [programs.localnet]
-betting = "5Dhw6eY4xHrScWFyA35w7GLD5vP9YHKfod44feGz5hmP"
+betting = "63p9553Ch7gsrAZM1NKq2AYvjybBCZZdpSvynGzUdziC"
+
+[programs.testnet]
+betting = "63p9553Ch7gsrAZM1NKq2AYvjybBCZZdpSvynGzUdziC"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "https://api.testnet.solana.com"
+cluster = "https://api.devnet.solana.com"
 wallet = "~/.config/solana/id.json"
 
 [scripts]

@@ -79,7 +79,7 @@ const Home: React.FC = () => {
       <br />{" "}
       <h5>
         Remember that you need a <a href="/questions">Phantom wallet</a> with{" "}
-        <a href="/questions">Testnet tokens</a>, and then you are ready to go to
+        <a href="/questions">Devnet tokens</a>, and then you are ready to go to
         the games and <a href="/questions">start betting</a>.{" "}
       </h5>
     </div>
