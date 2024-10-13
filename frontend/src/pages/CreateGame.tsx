@@ -51,7 +51,10 @@ const CreateGame: React.FC = () => {
 
       if (userPublicKey.toString() !== programManager.toString()) {
         setLoading(false);
-        setMessage("Only the program manager can create games.");
+        setMessage(
+          "Only the program manager can create games. Current program manager: " +
+            programManager.toString()
+        );
         return;
       }
       setShowForm(true);
