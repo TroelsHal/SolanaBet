@@ -1,11 +1,6 @@
 {
   "routes": [
     {
-      "route": "/",
-      "redirect": "https://www.troelshalgreen.dk",
-      "statusCode": 301
-    },
-    {
       "route": "/*",
       "serve": "/index.html",
       "statusCode": 200
