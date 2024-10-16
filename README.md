@@ -4,7 +4,7 @@ Solana Bet is a Solana program that lets the user bet Solana tokens on selected 
 
 The program can be accessed through the web client at: [https://bit.ly/3zLbQcc](https://bit.ly/3zLbQcc)
 
-### Start here
+### Code
 
 You might want to look at these files:
 
