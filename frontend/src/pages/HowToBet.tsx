@@ -32,58 +32,73 @@ const Coin = ({ full, half }: { full: number; half?: boolean }) => {
   );
 };
 
-const Home: React.FC = () => {
+const HowToBet: React.FC = () => {
   window.Buffer = buffer.Buffer;
   return (
     <div className="text-container">
-      <h2>SolanaBet is a pool-betting platform.</h2>
+      <h1>SolanaBet is a pool-betting platform.</h1>
       <br />
-      <h5>
-        You choose how much you want to bet on a game. When the game is over,
-        all the betters that predicted the correct result share the total amount
-        of bets.
-      </h5>
+      <p className="lead">
+        Predict a result and choose how much you want to bet.
+      </p>
+      <p className="lead">
+        When the game is over, all the betters that predicted the correct result
+        share the total sum of bets.
+      </p>
       <br />
-      <h5>Let’s look at a simple example:</h5>
-      <h5>
-        <strong>Alice</strong> bets 1 SOL on the <strong>home team.</strong>{" "}
+      <h3>Let’s look at a simple example</h3>
+      <p className="lead">
+        <strong>Alice</strong> bets 1 SOL on the <strong>home</strong> team.
         <Coin full={1} half={false} />
-      </h5>
-      <h5>
-        <strong>Bob</strong> bets 3 SOL on the <strong>home team.</strong>
+      </p>
+      <p className="lead">
+        <strong>Bob</strong> bets 3 SOL on the <strong>home</strong> team.
         <Coin full={3} half={false} />
-      </h5>
-      <h5>
-        <strong>Carroll</strong> bets 6 SOL on the <strong>away team</strong>.
+      </p>
+      <p className="lead">
+        <strong>Carroll</strong> bets 6 SOL on the <strong>away</strong> team.
         <Coin full={6} half={false} />
-      </h5>
-      <h5>The total amount of bets is 10 SOL.</h5>
+      </p>
+      <p className="lead">The total amount of bets is 10 SOL.</p>
       <br />
-      <h5>
-        Let's say the <strong>home teams</strong> wins, so Alice and Bob share
+      <p className="lead">
+        Let's say the <strong>home</strong> team wins, so Alice and Bob share
         the 10 SOL.
-      </h5>
+      </p>
       <br />
-      <h5>
+      <p className="lead">
         25% of the bets on the correct result came from <strong>Alice</strong>,
         so she gets 25% of the 10 SOL.
         <Coin full={2} half={true} />
-      </h5>
-      <h5>
+      </p>
+      <p className="lead">
         75% of the bets on the correct result came from <strong>Bob</strong>, so
         he gets 75% of the 10 SOL.
         <Coin full={7} half={true} />
-      </h5>
+      </p>
       <br />
-      <h5>...and that’s all you need to know about pool betting.</h5>
-      <br />{" "}
-      <h5>
-        Remember that you need a <a href="/questions">Phantom wallet</a> with{" "}
-        <a href="/questions">Devnet tokens</a>, and then you are ready to go to
-        the games and <a href="/questions">start betting</a>.{" "}
-      </h5>
+      <p className="lead">
+        ... and that’s all you need to know about pool betting.
+      </p>
+      <br />
+      <h3>Getting started</h3>
+      <p className="lead">
+        Remember that you need a{" "}
+        <a href="/questions" className="custom-link">
+          Phantom wallet
+        </a>{" "}
+        with{" "}
+        <a href="/questions" className="custom-link">
+          Devnet tokens
+        </a>
+        , and then you are ready to go to the games and{" "}
+        <a href="/questions" className="custom-link">
+          start betting
+        </a>
+        .{" "}
+      </p>
     </div>
   );
 };
 
-export default Home;
+export default HowToBet;

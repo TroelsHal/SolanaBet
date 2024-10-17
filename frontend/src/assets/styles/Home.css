@@ -1,9 +1,25 @@
-.text-container a {
-  color: black;
-  text-decoration: underline;
+.home-container {
+  padding: 80px 15px;
+  background: linear-gradient(to bottom, #eef2ff, #ffffff);
 }
 
-.text-container a:hover {
-  color: #737373;
-  text-decoration: underline;
+.header-section h1 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.header-section p {
+  color: #555;
+}
+
+.header-section .btn {
+  background-color: #5b47fa;
+  border: none;
+  padding: 12px 30px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.header-section .btn:hover {
+  background-color: #4a38d9;
 }

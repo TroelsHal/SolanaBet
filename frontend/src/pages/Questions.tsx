@@ -23,6 +23,7 @@ const Questions: React.FC = () => {
           href={`https://github.com/TroelsHal/SolanaBet`}
           target="_blank"
           rel="noopener noreferrer"
+          className="custom-link"
         >
           Github
         </a>{" "}
@@ -31,6 +32,7 @@ const Questions: React.FC = () => {
           href={`https://explorer.solana.com/address/${programAddress}?cluster=devnet`}
           target="_blank"
           rel="noopener noreferrer"
+          className="custom-link"
         >
           Solana Explorer
         </a>
@@ -52,6 +54,7 @@ const Questions: React.FC = () => {
           href={`https://solfaucet.com/`}
           target="_blank"
           rel="noopener noreferrer"
+          className="custom-link"
         >
           here
         </a>{" "}
@@ -60,6 +63,7 @@ const Questions: React.FC = () => {
           href={`https://faucet.quicknode.com/solana/devnet/`}
           target="_blank"
           rel="noopener noreferrer"
+          className="custom-link"
         >
           here
         </a>
@@ -75,6 +79,7 @@ const Questions: React.FC = () => {
           href={`https://phantom.app/`}
           target="_blank"
           rel="noopener noreferrer"
+          className="custom-link"
         >
           download it here
         </a>
@@ -97,7 +102,10 @@ const Questions: React.FC = () => {
         <ul>
           <li>
             A small fee is paid to the Solana blockchain when you place a bet.
-            You can reclaim part of this fee on <a href="/my-bets">My Bets</a>{" "}
+            You can reclaim part of this fee on{" "}
+            <a href="/my-bets" className="custom-link">
+              My Bets{" "}
+            </a>{" "}
             after the game ends.
           </li>
           <li>
@@ -112,7 +120,11 @@ const Questions: React.FC = () => {
       </p>
       <p>
         You can view your bets and claim your payout directly to your wallet
-        through the <a href="/my-bets">My Bets</a> page.
+        through the{" "}
+        <a href="/my-bets" className="custom-link">
+          My Bets
+        </a>{" "}
+        page.
       </p>
       <p>
         <strong>When can I get my payout?</strong>

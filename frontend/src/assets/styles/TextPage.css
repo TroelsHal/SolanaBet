@@ -12,12 +12,16 @@
   width: 14px;
 }
 
-.text-container a {
-  color: black;
-  text-decoration: underline;
+a.text-primary {
+  text-decoration: none;
 }
 
-.text-container a:hover {
-  color: #737373;
+.custom-link {
+  color: rgb(79 70 229);
+  text-decoration: none;
+}
+
+.custom-link:hover {
+  color: rgb(52, 46, 155);
   text-decoration: underline;
 }
