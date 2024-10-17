@@ -81,7 +81,7 @@ const Questions: React.FC = () => {
           rel="noopener noreferrer"
           className="custom-link"
         >
-          download it here
+          download Phantom Wallet here
         </a>
         .
       </p>

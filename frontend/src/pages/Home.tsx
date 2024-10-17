@@ -28,8 +28,13 @@ const Home: React.FC = () => {
         </p>
         <p className="lead">
           You need a{" "}
-          <a href="/questions" className="custom-link">
-            Phantom wallet
+          <a
+            href={`https://phantom.app/`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="custom-link"
+          >
+            Phantom Wallet
           </a>{" "}
           for your browser.
         </p>
