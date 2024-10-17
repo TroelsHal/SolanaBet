@@ -34,7 +34,7 @@ This program (still) only uses free devnet tokens.
 
 ### To do
 
-- [ ] Check/fix external links
+- [x] Check/fix external links
 - [ ] Fix timezone on MyBets page
 - [x] Migrate to devnet
 - [ ] Validate program on Solana Explorer
