@@ -2,7 +2,7 @@
 
 Solana Bet is a Solana program that lets the user bet Solana tokens on selected football (soccer) games.
 
-The program can be accessed through the web client at: [https://bit.ly/3zLbQcc](https://bit.ly/3zLbQcc)
+The program can be accessed through the user friendly web client at: https://solanabet.troelshalgreen.dk
 
 ### Code
 
